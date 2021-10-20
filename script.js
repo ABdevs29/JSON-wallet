@@ -21,7 +21,7 @@ loadPage();
 //Get the Baskets stored in Pantry ID
 function getBaskets() {
   fetch(
-    `https://getpantry.cloud/apiv1/pantry/db973b74-5dbf-41dd-a219-c32c00842f6c`,
+    `https://getpantry.cloud/apiv1/pantry/96e6f109-da0f-40e2-880c-10c0c8bcfaa9`,
     {
       method: "GET",
     })
