@@ -54,7 +54,7 @@ function createBasket() {
     const basketName = document.querySelector("#basketName").value;
 
     fetch(
-      `https://getpantry.cloud/apiv1/pantry/db973b74-5dbf-41dd-a219-c32c00842f6c/basket/${basketName}`,
+      `https://getpantry.cloud/apiv1/pantry/96e6f109-da0f-40e2-880c-10c0c8bcfaa9/basket/${basketName}`,
       {
         method: "POST",
         headers: {
@@ -84,7 +84,7 @@ function getBasketDetails(basketName, index) {
   console.log(basketName);
 
   fetch(
-    `https://getpantry.cloud/apiv1/pantry/db973b74-5dbf-41dd-a219-c32c00842f6c/basket/${basketName}`,
+    `https://getpantry.cloud/apiv1/pantry/96e6f109-da0f-40e2-880c-10c0c8bcfaa9/basket/${basketName}`,
     {
       method: "GET",
     }
@@ -120,7 +120,7 @@ function updateContent(basketName, index) {
     document.querySelector("#editJsonData").value = pretty;
 
     fetch(
-      `https://getpantry.cloud/apiv1/pantry/db973b74-5dbf-41dd-a219-c32c00842f6c/basket/${basketName}`,
+      `https://getpantry.cloud/apiv1/pantry/96e6f109-da0f-40e2-880c-10c0c8bcfaa9/basket/${basketName}`,
       {
         method: "PUT",
         headers: {
@@ -155,7 +155,7 @@ function deleteBasket(basketName, index) {
 
   if (r == true) {
     fetch(
-      `https://getpantry.cloud/apiv1/pantry/db973b74-5dbf-41dd-a219-c32c00842f6c/basket/${basketName}`,
+      `https://getpantry.cloud/apiv1/pantry/96e6f109-da0f-40e2-880c-10c0c8bcfaa9/basket/${basketName}`,
       {
         method: "DELETE",
         headers: {
